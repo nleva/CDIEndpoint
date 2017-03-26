@@ -4,6 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.enterprise.event.Event;
+import javax.enterprise.event.Observes;
 import javax.inject.Inject;
 import javax.websocket.CloseReason;
 import javax.websocket.EndpointConfig;
@@ -35,9 +36,12 @@ import ru.sendto.lmps.aop.OnOpenPayload;
 
 public class WebsoketEventService {
 
-	@Inject
 	private Logger			log;
 
+	public void setLoger(@Observes Logger log) {
+		this.log = log;
+	}
+	
 	@Inject
 	@OnOpenInit
 	@OnOpenFinalize
