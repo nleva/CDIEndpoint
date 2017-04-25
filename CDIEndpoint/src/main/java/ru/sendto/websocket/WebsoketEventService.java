@@ -71,10 +71,10 @@ public class WebsoketEventService {
 	@Inject
 	@OnErrorInit
 	@OnErrorFinalize
-	@OnCloseInit
-	@OnCloseFinalize
-	@OnMessageInit
-	@OnMessageFinalize
+//	@OnCloseInit
+//	@OnCloseFinalize
+//	@OnMessageInit
+//	@OnMessageFinalize
 	private Event<Object>	errorBus;
 	@Inject
 	@OnErrorPayload

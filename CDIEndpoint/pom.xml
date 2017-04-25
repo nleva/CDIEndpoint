@@ -108,7 +108,7 @@
 				<version>2.5.3</version>
 				<configuration>
 					<checkModificationExcludes>
-						<checkModificationExclude>DtoCommon/target/**</checkModificationExclude>
+						<checkModificationExclude>CDIEndpoint/target/**</checkModificationExclude>
 					</checkModificationExcludes>
 				</configuration>
 				<executions>
