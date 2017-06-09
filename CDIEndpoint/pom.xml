@@ -5,7 +5,7 @@
 	<version>0.2.0.1-SNAPSHOT</version>
 	<name>Websocket-common</name>
 	<description>Websocket cdi integration</description>
-	<url>http://github.com/nleva/EjbArchetype</url>
+	<url>http://github.com/nleva/CDIEndpoint</url>
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
@@ -21,9 +21,9 @@
 	</licenses>
 
 	<scm>
-		<url>https://github.com/nleva/EjbArchetype</url>
-		<connection>scm:git:https://github.com/nleva/EjbArchetype.git</connection>
-		<developerConnection>scm:git:https://github.com/nleva/EjbArchetype.git</developerConnection>
+		<url>https://github.com/nleva/CDIEndpoint</url>
+		<connection>scm:git:https://github.com/nleva/CDIEndpoint.git</connection>
+		<developerConnection>scm:git:https://github.com/nleva/CDIEndpoint.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
