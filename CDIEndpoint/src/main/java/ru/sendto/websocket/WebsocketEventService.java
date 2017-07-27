@@ -34,7 +34,7 @@ import ru.sendto.lmps.aop.OnOpenPayload;
  * Вебсокет.
  */
 
-public class WebsoketEventService {
+public class WebsocketEventService {
 
 	private Logger			log;
 
