@@ -36,7 +36,7 @@ import ru.sendto.lmps.aop.OnOpenPayload;
 
 public class WebsocketEventService {
 
-	private Logger			log;
+	protected Logger			log;
 
 	public void setLoger(@Observes Logger log) {
 		this.log = log;
@@ -45,28 +45,28 @@ public class WebsocketEventService {
 	@Inject
 	@OnOpenInit
 	@OnOpenFinalize
-	private Event<Object>	openBus;
+	protected Event<Object>	openBus;
 	@Inject
 	@OnOpenPayload
-	private Event<Object>	openPayloadBus;
+	protected Event<Object>	openPayloadBus;
 
 	@Inject
 	@OnMessageInit
 	@OnMessageFinalize
-	private Event<Object>	messageBus;
+	protected Event<Object>	messageBus;
 	@Inject
 	@OnMessagePayload
-	private Event<Object>	messagePayloadBus;
+	protected Event<Object>	messagePayloadBus;
 
 	@Inject
 	@OnCloseInit
 	@OnCloseFinalize
 	@OnMessageInit
 	@OnMessageFinalize
-	private Event<Object>	closeBus;
+	protected Event<Object>	closeBus;
 	@Inject
 	@OnClosePayload
-	private Event<Object>	closePayloadBus;
+	protected Event<Object>	closePayloadBus;
 
 	@Inject
 	@OnErrorInit
@@ -75,11 +75,11 @@ public class WebsocketEventService {
 //	@OnCloseFinalize
 //	@OnMessageInit
 //	@OnMessageFinalize
-	private Event<Object>	errorBus;
+	protected Event<Object>	errorBus;
 	@Inject
 	@OnErrorPayload
 	@OnClosePayload
-	private Event<Object>	errorPayloadBus;
+	protected Event<Object>	errorPayloadBus;
 
 	@Inject
 	ObjectMapper mapper;
